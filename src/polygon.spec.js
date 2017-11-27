@@ -1,4 +1,4 @@
-import Polygon from 'polygon';
+import Polygon from './polygon';
 
 describe('ES6 Polygon', function() {
     let polygon = new Polygon(5, 4);

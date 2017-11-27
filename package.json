@@ -1,21 +1,27 @@
 {
-  "name": "karma-es6-module-sample",
+  "name": "vue-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack": "webpack --config build/webpack.test.conf.js",
+    "test": "karma start"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "vue": "^2.5.8"
+  },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
     "jasmine-core": "^2.8.0",
     "karma": "^1.7.1",
-    "karma-babel-preprocessor": "^7.0.0",
     "karma-chrome-launcher": "^2.2.0",
-    "karma-jasmine": "^1.1.0"
+    "karma-jasmine": "^1.1.0",
+    "karma-webpack": "^2.0.6",
+    "vue-loader": "^13.5.0",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.5.8",
+    "webpack": "^3.8.1"
   }
 }
