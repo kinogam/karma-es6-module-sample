@@ -1,3 +1,5 @@
+import service from './service';
+
 class Polygon {
     constructor(height, width) {
         this.height = height;
@@ -6,6 +8,10 @@ class Polygon {
 
     calcArea() {
         return this.height * this.width;
+    }
+
+    getSomething() {
+        return `hello ${service.msg}`;
     }
 }
 
