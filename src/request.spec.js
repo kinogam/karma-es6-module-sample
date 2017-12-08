@@ -43,7 +43,7 @@ describe('request', () => {
             },
             flush() {
                 flushList.forEach(item => {
-                    item.callback(undefined, {body: JSON.stringify(item.mockRes)});
+                    item.callback(undefined, {body: typeof item.mockRes === 'string' ? item.mockRes : JSON.stringify(item.mockRes)});
                 });
 
                 flushList = [];
